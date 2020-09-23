@@ -1,0 +1,10 @@
+<h1> Welcome to Products Page! </h1>
+
+<p> Here are the currently available products! </p>
+
+<% @products each do |product|%>
+
+<%=product.name%>
+<%=link_to product.name, product_path(product.id)%>
+<%end%>
+
